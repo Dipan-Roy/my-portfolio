@@ -68,10 +68,10 @@ export default function ProjectsPage() {
         </div>
 
         {/* Tab filters */}
-        <div className="flex flex-wrap gap-2 p-1 border rounded-full sm:rounded-full rounded-2xl bg-surface/10 w-fit">
+        <div className="grid w-full grid-cols-2 gap-1 rounded-2xl border bg-surface/10 p-1 sm:flex sm:w-fit sm:rounded-full">
           <button
             onClick={() => setFilter("all")}
-            className={`rounded-full px-4 py-1.5 text-xs font-medium font-mono transition-all cursor-pointer ${
+            className={`rounded-xl px-3 py-1.5 text-center text-xs font-medium font-mono transition-all cursor-pointer sm:rounded-full sm:px-4 ${
               filter === "all"
                 ? "bg-fg text-bg"
                 : "text-muted hover:text-fg"
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
           </button>
           <button
             onClick={() => setFilter("Fullstack")}
-            className={`rounded-full px-4 py-1.5 text-xs font-medium font-mono transition-all cursor-pointer ${
+            className={`rounded-xl px-3 py-1.5 text-center text-xs font-medium font-mono transition-all cursor-pointer sm:rounded-full sm:px-4 ${
               filter === "Fullstack"
                 ? "bg-fg text-bg"
                 : "text-muted hover:text-fg"
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
           </button>
           <button
             onClick={() => setFilter("Frontend")}
-            className={`rounded-full px-4 py-1.5 text-xs font-medium font-mono transition-all cursor-pointer ${
+            className={`rounded-xl px-3 py-1.5 text-center text-xs font-medium font-mono transition-all cursor-pointer sm:rounded-full sm:px-4 ${
               filter === "Frontend"
                 ? "bg-fg text-bg"
                 : "text-muted hover:text-fg"
@@ -101,7 +101,7 @@ export default function ProjectsPage() {
           </button>
           <button
             onClick={() => setFilter("Backend")}
-            className={`rounded-full px-4 py-1.5 text-xs font-medium font-mono transition-all cursor-pointer ${
+            className={`rounded-xl px-3 py-1.5 text-center text-xs font-medium font-mono transition-all cursor-pointer sm:rounded-full sm:px-4 ${
               filter === "Backend"
                 ? "bg-fg text-bg"
                 : "text-muted hover:text-fg"
