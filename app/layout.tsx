@@ -31,7 +31,7 @@ const serif = Instrument_Serif({
   display: "swap",
 });
 
-const baseUrl = site.url || "https://dipan-portfolio.vercel.app";
+const baseUrl = site.url || "https://dipanroychoudhury.me";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -72,10 +72,10 @@ export const metadata: Metadata = {
     siteName: site.name,
     images: [
       {
-        url: `${baseUrl}/icon.jpg`,
+        url: `${baseUrl}/og.jpg`,
         width: 1200,
         height: 630,
-        alt: `${site.name} Portfolio Logo`,
+        alt: `${site.name} — ${site.role}`,
       },
     ],
   },
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${site.name} — ${site.role}`,
     description: site.tagline,
-    images: [`${baseUrl}/icon.jpg`],
+    images: [`${baseUrl}/og.jpg`],
   },
 };
 

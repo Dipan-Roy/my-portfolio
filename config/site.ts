@@ -19,14 +19,6 @@ export type Job = {
   url?: string;
 };
 
-export type Post = {
-  title: string;
-  summary: string;
-  date: string;
-  url: string;
-  readingTime?: string;
-};
-
 export type SocialCard = {
   pronouns?: string;
   handle: string;
@@ -38,8 +30,8 @@ export type SocialCard = {
 
 export const site = {
   name: "Dipan Roy Choudhury",
-  url: "https://dipan-portfolio.vercel.app",
-  profileImages: ["/profile.jpg", "/profile2.png"],
+  url: "https://dipanroychoudhury.me",
+  profileImages: ["/profile.jpg", "/profile2.jpg"],
   bannerImage: "/banner.jpg",
   socialBannerImage: "/social-banner.jpg",
   initials: "DRC",
@@ -53,7 +45,6 @@ export const site = {
   location: "Kolkata, India",
   timezone: "Asia/Kolkata",
   email: "roydipan05@gmail.com",
-  greeting: "Hey, I'm Dipan",
   tagline:
     "Engineering the web, one idea at a time.\nI build modern, scalable web applications and AI-powered solutions that solve real-world problems.",
   about: [
@@ -72,7 +63,6 @@ export const site = {
     availableText: "open to opportunities",
     nowLearning: ["Backend system design", "Software architecture", "DSA"] as string[],
     nowBuilding: "GenAI applications",
-    nowListening: "focus playlists",
   },
   socials: {
     github: "https://github.com/Dipan-Roy",
@@ -238,7 +228,6 @@ export const site = {
     "Vercel",
     "Render",
   ],
-  writing: [] as Post[],
   github: {
     username: "Dipan-Roy",
     contributionsLastYear: "—",
